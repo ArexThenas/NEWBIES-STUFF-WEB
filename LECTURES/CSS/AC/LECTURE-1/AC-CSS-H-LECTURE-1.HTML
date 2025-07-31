@@ -1,11 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>LECTURE-1</title>
+    <link rel="stylesheet" href="AC-CSS-LECTURE-1.CSS">
 </head>
+
 <body>
-    
+    <h1>CSS LECTURE-1</h1>
+    <hr>
+    <pre>Cascading Style Sheet (CSS) is a language used to describe the style of an html document...
+It controls the layout of multiple web pages all at once when used properly.</pre>
+    </pre>
+    <hr>
+    <h2>BASIC SYNTAX</h2>
+    <pre>
+The basic syntax of css is as follows :
+        <code>
+            h1{
+                color : black ;
+            }
+        </code>
+        In this example, the selector is "h1", which targets all h1 elements in the HTML document,
+        color is the property and black is the value.
+    </pre>
+    <hr>
+    <h2>INCLUDING STYLE</h2>
+    <pre>
+There are three ways to include css in an html document:
+
+            1. Inline CSS : Using style attribute in the opening tag of an html element.
+            
+                    Example :
+                    <code>
+                        &lt;h1 style="color: red;"&gt;Hello World!&lt;/h1&gt;
+                    </code>
+            
+            2. Internal CSS : Using style tag in the head section of an html document.
+            
+                    Example :
+                    <code>
+                        &lt;head&gt;
+                            &lt;style&gt;
+                                h1 {
+                                    color: blue;
+                                }
+                            &lt;/style&gt;
+                        &lt;/head&gt;         
+                    </code>
+            
+            3. External CSS : Using link tag in the head section of an html document to link to an external css file.
+            
+                    Example :
+                    <code>
+                        &lt;head&gt;
+                            &lt;link rel="stylesheet" href="style.css"&gt;
+                        &lt;/head&gt;
+                    </code>
+
+Note : In practical cases we do not use the first or second method but the third method is used...
+       There is a priority order to the given methods as follows :
+       
+            1.Inline CSS   - Has the utmost priority.
+            2.Internal CSS - Priority depends on whether its written before link or after link tag,
+                             if it is written after link then internal css will have a higher priority.
+            3.External CSS - Priority depends on whether its linked before or after style tag,
+                             if it is written after style then external css will have a higher priority.
+    </pre>
+    <hr>
+    <h2>COLOR PROPERTY</h2>
+    <pre>
+This property is uesed to set the color of the foreground.
+
+                Example : 
+                         <code>
+                            color &#58; red &#59
+                            color &#58; pink &#59
+                            color &#58; blue &#59
+                            color &#58; green &#59
+                        </code>
+    </pre>
+    <hr>
+    <h2>BACKGROUND COLOR PROPERTY</h2>
+    <pre>
+This property is uesed to set the color of the background.
+
+                Example : 
+                         <code>
+                            background-color &#58; red &#59
+                            background-color &#58; pink &#59
+                            background-color &#58; blue &#59
+                            background-color &#58; green &#59
+                        </code>
+
+Note : You can write multiple properties in a single syntax.                        
+    </pre>
+    <hr>
+    <h2>COLOR SYSTEMS</h2>
+    <pre>In the lecture they talked about the <strong>RGB</strong> and <strong>HEX</strong> color systems...
+Usually one can write the name of the color to be used
+but in some cases <strong>RGB</strong> and <strong>HEX</strong> color systems may be used...
+    </pre>
+    <h3>RGB</h3>
+    <pre>
+In this system <strong>RED</strong>, <strong>GREEN</strong> and <strong>BLUE</strong> are the primary colours and rest of the colours can be derived using them...
+
+Values of red, green and blue varies from 0 to 255...
+
+            Example : 
+                     <code>color : rgb(255,0,0);</code>
+                            Output color : Red
+                     <code>color : rgb(0,255,0);</code>
+                            Output color : Green
+                     <code>color : rgb(0,0,255);</code>
+                            Output color : Blue
+    </pre>
+    <h3>HEX</h3>
+    <pre>
+Hex system also sets the <Strong>RGB</Strong> values but in a shorter format.
+It is called <strong>HEXADECIMAL</strong> system since it has 16 characters digits <strong>0-9</strong> [0,1,2,3,4,5,6,7,8 and 9] and letters <strong>A-F</strong> [A,B,C,D,E and F]...
+
+Relating RGB to HEX:
+                    R=0-255 or 00-FF
+                    G=0-255 or 00-FF
+                    B=0-255 or 00-FF
+
+            Example : 
+                     <code>color : #FF0000;</code>
+                            Output color : Red
+                     <code>color : #00FF00;</code>
+                            Output color : Green
+                     <code>color : #0000FF;</code>
+                            Output color : Blue
+    </pre>
+    <hr>
+    <h2>SELECTORS</h2>
+    <pre>
+The following are the selectors that were discussed in the lecture:
+
+        1. Universal Selector : 
+            This selector is used to select all the elements in the document.
+            
+                Example : <code>* { color: black; }</code>
+        
+        2. Type Selector :
+            This selector is used to select all the elements of a specific type.
+            
+                Example : <code>h1 { color: blue; }</code>
+
+        3. Class Selector :
+            This selector is used to select all the elements having the same class.
+            It is denoted by a dot (.) followed by the class name.
+            
+                Example : <code>.className { color: green; }</code>
+
+        4. ID Selector :
+            This selector is used to select a single element with a specific ID.
+            It is denoted by a hash (#) followed by the ID name.
+            
+                Example : <code>#idName { color: red; }</code>
+
+Note : Priority of selectors is based on recency,
+       which means that when multiple selectors are used for the same element the last selector written will have the highest priority.
+
+Note : You can use multiple selectors in a single syntax by separating them with commas.
+       For example, <code>h1, h2 { color: blue; }</code> will apply the same style to both h1 and h2 elements.
+
+Note : You can provide multiple tags with the same id but you should not,
+       appearantly it is not a good practice to do so.
+       
+       The id should be unique in the document.
+
+       You can use the same class for multiple elements but you should not use the same id for multiple elements.
+    </pre>
+    <hr>
+    <div>
+        <h2>TESTING AREA</h2>
+        <hr>
+
+        <div id="BasicSyntax">
+            <h3>BASIC SYNTAX</h3>
+            <Pre>
+                Here the Basic Syntax is tested...
+            </Pre>
+        </div>
+        <hr>
+        <div id="CSystem">
+            <h3>COLOR SYSTEMS</h3>
+            <div id="RGBSystem">
+                <h4>RGB SYSTEM</h4>
+                <Pre>
+                Here the RGB System is tested... Using Yellow color and black background...
+            </Pre>
+            </div>
+            <div id="HEXSystem">
+                <h4>HEX SYSTEM</h4>
+                <Pre>
+                Here the HEX System is tested... Using red color and a light blue background...
+            </Pre>
+            </div>
+        </div>
+        <hr>
+        <div id="Selectors">
+            <h3>SELECTORS</h3>
+            <span>
+                <h4>TYPE SELECTOR</h4>
+                <PRE>
+            here the type selector is tested... using a green color...
+        </PRE>
+            </span>
+            <div class="classSelector">
+                <h4>CLASS SELECTOR</h4>
+                <PRE>
+                    Here the class selector is tested... using wite color and blue background...
+                </PRE>
+            </div>
+            <div id="idSelector">
+                <h4>ID SELECTOR</h4>
+                <PRE>
+                    Here the id selector is tested... using a black color and a green background...
+                </PRE>
+            </div>
+            <div>
+                <h4>UNIVERSAL SELECTOR</h4>
+                <PRE>
+                    Universal selector will affect the whole page thats why i did not use it...
+                </PRE>
+            </div>
+        </div>
+        <hr>
+        <h2>PRACTICE SET</h2>
+        <PRE>
+            1. Create a simple div with an id "ZeroTwo", add some text inside the div and set the background color to blue...
+            2. Create three headings h1, h2 and h3 assign them the class "ZeroTwo" and set the color of heading to red... 
+            3. Create a button and set its background color to :
+
+                    a. Green using style sheet.
+                    b. blue using internal css.
+                    c. pink using inline css.
+        </PRE> 
 </body>
+
 </html>
