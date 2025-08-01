@@ -5,7 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LECTURE-1</title>
+    <style>
+        button{
+            color: blue;
+        }
+    </style>
     <link rel="stylesheet" href="AC-CSS-LECTURE-1.CSS">
+    <style>
+        button{
+            background-color: black;
+        }
+    </style>
 </head>
 
 <body>
@@ -240,7 +250,35 @@ Note : You can provide multiple tags with the same id but you should not,
                     a. Green using style sheet.
                     b. blue using internal css.
                     c. pink using inline css.
-        </PRE> 
+        </PRE><hr>
+        <h2>PRACTICE SET SOLUTIONS</h2>
+        <pre>
+            1. Create a simple div with an id "ZeroTwo", add some text inside the div and set the background color to blue...
+            <div id="ZeroTwo">
+                <p>This is a simple div with an id "ZeroTwo" and background color set to blue.</p>
+            </div><hr>
+            
+            2. Create three headings h1, h2 and h3 assign them the class "ZeroTwo" and set the color of heading to red... 
+            <div>
+                <h1 class="ZeroTwo">THE H1 HEADING</h1>
+                <h2 class="ZeroTwo">THE H2 HEADING</h2>
+                <h3 class="ZeroTwo">THE H3 HEADING</h3>
+            </div><hr>
+
+            3. Create a button and set its background color to :
+
+                    a. Green using style sheet.
+                    b. blue using internal css.
+                    c. pink using inline css.
+            
+            <div>
+                <Button style="color: pink;">RE:ZERO IS PEAK!</Button>
+            </div>
+Note : I used two style tags in the head section to showcase that internal css and external css are prioritized based on their order of appearance in the head tag...
+       If you use the style tag first and then use the link tag for external stylesheet then the latter will be prioritized...
+       If you use style tag after the link tag then the internal css will be prioritized...
+       Now whichever of the above two methods you use the utmost priority will be given to inline css (if used)...
+        </pre>
 </body>
 
 </html>

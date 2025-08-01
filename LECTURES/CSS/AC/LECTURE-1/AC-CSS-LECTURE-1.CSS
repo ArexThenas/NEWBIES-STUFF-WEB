@@ -28,3 +28,13 @@ span{
     color: #000000;
     background-color: #00FF00;
 }
+#ZeroTwo{
+    background-color: rgb(0,0,255);
+}
+.ZeroTwo{
+    color: #FF0000;
+}
+button{
+    color:#00FF00;
+    background-color: red;
+}
