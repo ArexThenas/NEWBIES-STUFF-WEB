@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LECTURE-4</title>
+</head>
+
+<body>
+    <h1>HTML LECTURE-4</h1>
+    <hr>
+    <pre>In this lecture we will learn about tables, formsand some other imoportant elements...</pre>
+    <hr>
+    <h2>LISTS IN HTML</h2>
+    <pre>
+In the lecture they two types of lists were mentioned:
+        1. Ordered List: 
+            - Used for items that have a specific order or sequence.
+            - Created using the <code>&lt;ol&gt;</code> tag.
+            - Each item is defined with the <code>&lt;li&gt;</code> tag.
+
+            Example:
+            <code>
+                &lt;Ol&gt;
+                    &lt;li&gt;Apple&lt;/li&gt;
+                    &lt;li&gt;Mango&lt;/li&gt;
+                    &lt;li&gt;Orange&lt;/li&gt;
+                &lt;/ol&gt;
+            </code>
+        2. Unordered List:
+            - Used for items that do not have a specific order.
+            - Created using the <code>&lt;ul&gt;</code> tag.
+            - Each item is defined with the <code>&lt;li&gt;</code> tag.
+
+            Example:
+            <code>
+                &lt;Ul&gt;
+                    &lt;li&gt;Apple&lt;/li&gt;
+                    &lt;li&gt;Mango&lt;/li&gt;
+                    &lt;li&gt;Orange&lt;/li&gt;
+                &lt;/Ul&gt;
+            </code>
+
+Note: In unordered lists bullet points are used, whereas in ordered lists numbers or letters are used to indicate the order of items.
+    </pre>
+    <hr>
+    <h2>TABLES IN HTML</h2>
+    <pre>
+Tables are used to display data in a structured format with rows and columns.
+    
+        Example of a simple table:
+    <code>
+        &lt;table&gt;
+            &lt;tr&gt; <!-- Table Row -->
+                &lt;th&gt;Header 1&lt;/th&gt; <!-- Table Header -->
+                &lt;th&gt;Header 2&lt;/th&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Data 1&lt;/td&gt; <!-- Table Data -->
+                &lt;td&gt;Data 2&lt;/td&gt;
+            &lt;/tr&gt;
+             &lt;tr&gt;
+                &lt;td&gt;Row 2, Data 1&lt;/td&gt; <!-- Table Data -->
+                &lt;td&gt;Row 2, Data 2&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/table&gt;
+    </code>
+
+Here, tr represents table rows,
+      th represents table header,  
+      td represents table data,
+      table is used to contain previously mentioned elements.
+    </pre>
+    <hr>
+    <h2>CAPTION IN TABLES</h2>
+    <pre>
+The <code>&lt;caption&gt;</code> tag is used to provide a title or description for the table.
+It should be placed immediately after the <code>&lt;table&gt;</code> tag.
+        
+        Example:
+        <code>
+            &lt;table&gt;
+                &lt;caption&gt;My Table Caption&lt;/caption&gt;
+                &lt;tr&gt;
+                    &lt;th&gt;Header 1&lt;/th&gt;
+                    &lt;th&gt;Header 2&lt;/th&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Data 1&lt;/td&gt;
+                    &lt;td&gt;Data 2&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        </code>
+    </pre>
+    <hr>
+    <h2>THEAD AND TBODY</h2>
+    <pre>
+Thead is used to group the header content in a table, while tbody is used to group the body content.
+Tbody is useful for styling and scripting purposes, especially when dealing with large tables.
+        
+        Example:
+        <code>
+            &lt;table&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Header 1&lt;/th&gt;
+                        &lt;th&gt;Header 2&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;Data 1&lt;/td&gt;
+                        &lt;td&gt;Data 2&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+    </pre>
+    <hr>
+    <h2>FORMS IN HTML</h2>
+    <pre>
+Forms are used to collect data from the users.
+
+        Example of a simple form:
+        <code>
+            &lt;form&gt;
+                form elements go here
+            &lt;/form&gt;
+    </pre>
+    <hr>
+    <h2>ACTION ATTRIBUTE</h2>
+    <pre>
+Action attribute in for is used to define where the form data should be sent when the form is submitted.
+it specifies the URL of the server-side script that will process the form data.
+
+        Example:
+        <code>
+            &lt;form action="submit_form.php"&gt;
+                Form elements go here
+            &lt;/form&gt;
+        </code>
+You can also use a relative URL, like <code>action="submit.php"</code>, which will submit the form to the same directory as the current page.
+    </pre>
+    <hr>
+    <h2>FORM INPUT ELEMENT</h2>
+    <pre>
+This element is used to enable the users to inpput data into the form.
+
+        Example:
+        <code>
+            &lt;form action="submit_form.php"&gt;
+                &lt;input type="text" name="username" placeholder="Enter your username"&gt;
+                &lt;input type="submit" value="Submit"&gt;
+            &lt;/form&gt;
+
+Here, the <code>type</code> attribute specifies the type of input field (text, password, checkbox, etc.),
+the <code>name</code> attribute is used to identify the input field when the form is submitted,
+and the <code>placeholder</code> attribute provides a hint to the user about what to enter in the field.
+    </pre>
+    <hr>
+    <h2>LABEL</h2>
+    <pre>
+The label element is used to associate a text description with an input element, provides a larger clickable area...
+
+        Example:
+        <code>
+            &lt;form action="submit_form.php"&gt;
+                &lt;label for="username"&gt;Username:&lt;/label&gt;
+                &lt;input type="text" id="username" name="username" placeholder="Enter your username"&gt;
+                &lt;input type="submit" value="Submit"&gt;
+            &lt;/form&gt;
+        </code>
+
+Here, if the for attribute is used then one must use an id in the input elements to associate them...
+    </pre>
+    <hr>
+    <h2>CLASS AND ID</h2>
+    <pre>
+ID      :    An id is a unique identifier that should ideally be used uniquely for each html element...
+CLASS   :    An attribute that can be used to group different id's or elements... 
+    
+            Example :
+                    <code>
+                        &lt;p id = "id1" class = "group1"&gt;...&lt;/p&gt;
+                        &lt;p id = "id2" class = "group2"&gt;...&lt;/p&gt;
+                    </code>
+These can be preety useful when using CSS...
+    </pre>
+    <hr>
+    <h2>CHECKBOX</h2>
+    <pre>
+Checkbox is used to provide multiple option to select from... 
+
+        Example :
+                <code>
+                    &lt;label for = "id1"&gt; Label
+                            &lt;input type = "checkbox" id = "id1"&gt;
+                    &lt;/label&gt;
+                </code>
+
+                or
+
+                 <code>
+                    &lt;label for = "id1"&gt; Label &lt;/label&gt;
+                            &lt;input type = "checkbox"  id = "id1"&gt;
+                </code>
+I tried using both methods and appearantly they both worked... 
+
+    1.Using the former is less flexible since both the label and input need to be together,
+    here using the "for" attributre is optional since the label tag is wrapping the input element...
+
+    2.Using the latter is more flexible since label and input contain the same id therefore they can be multiple lines apart and still work...
+    </pre>
+    <hr>
+    <h2>RADIO</h2>
+    <pre>
+Radio is a kind of checkbox that can only gives the freedom to choose a single option...
+
+            Example : 
+                     <code>
+                        &lt;input type="radio"&gt;
+                     </code>
+I feel kinda lazy rn so figure out how to make multiple checkboxes and radios and what attributes are used on your own...
+    </pre>
+    <hr>
+    <h2>SELECT AND OPTION TAGS</h2>
+    <pre>
+The select and option tags are used simultaneously, the select tag is used to wrap multiple options 
+    and to provide the user with a dropdown menu...
+
+            Example : 
+                     <code>
+                        &lt;label for="cars"&gt;Choose a car:&lt;/label&gt;
+                            &lt;select id="cars" name="car">
+                                &lt;option value="volvo"&gt;Volvo&lt;/option&gt;
+                                &lt;option value="bmw"&gt;BMW&lt;/option&gt;
+                                &lt;option value="audi"&gt;Audi&lt;/option&gt;
+                            &lt;/select&gt;
+                     </code>
+Ofcourse the laziness still persists... Figure out why these attributes were used...
+    </pre>
+    <hr>
+    <h2>IFRAME TAG</h2>
+    <pre>
+Well this is an impressive tag for sure! 
+Why? You may ask, well this tag lets you display other websites on your webpage!
+
+            Example : 
+                     <code>
+                        &lt;iframe src="link"&gt;&lt;/iframe&gt;
+                     </code>
+
+Here, if you place some kind of text between the opening and closing tags
+      it will be treated as the fallback only when the users browser does not support iframe tag 
+      or the iframe tag is disabled/blocked in the browser... <!--You may be wondering wasn't this guy feeling lazy why did he explain it? Well one is he who bestows meaning upon what we call realty...-->
+    </pre>
+    <hr>
+    <h2>VIDEO TAG</h2>
+    <pre>
+The video tag is used to add videos to a webpage either through an absolute link or a relative one...
+
+            Example : 
+                     <code>
+                        &lt;video src="link"&gt;Text goes here &lt;/video&gt;
+                     </code>
+
+You can enter some text between the opening tag and the closing tag as a fallback,
+just like you did in the iframe tag...
+
+Note : Both the iframe tag and video tag may not work properly and display the fallback 
+       when a site does not allow for itself to be displayed using the iframe tag,
+       or when your network is down...
+
+       You can always try experimenting with the tags to learn more also use ai for more clarity...
+
+Some attributes for the video tag :
+
+                                    1.Controls
+                                    2.height
+                                    3.width
+                                    4.loop
+                                    5.autoplay
+    </pre>
+    <hr>
+    <h2>PROJECTS</h2>
+    <pre>
+        1. Make a folder and combine all the lecture files in a single file AC-H-LECTURES.HTML using DOC.HTML 
+           for lecture text grouping, also make previews for each example using real tags...
+
+        2. Make a folder and make a portfolio website for <strong>Alexander The Great</strong> using appropriate file addons...
+    </pre>
+    <hr>
+    <pre>
+            END OF LECTURE-4
+            THANK YOU FOR READING!
+        </pre>
+</body>
+
+</html>
