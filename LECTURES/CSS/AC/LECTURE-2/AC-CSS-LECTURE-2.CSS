@@ -1,0 +1,13 @@
+*{
+    color: antiquewhite;
+}
+body{
+    background-color: rgb(61, 61, 61);
+}
+h1{
+    text-align:center;
+    color: blueviolet;
+}
+code{
+    color:orangered;
+}
