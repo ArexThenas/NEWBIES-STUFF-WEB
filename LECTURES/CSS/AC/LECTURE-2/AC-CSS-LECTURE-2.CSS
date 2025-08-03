@@ -11,3 +11,19 @@ h1{
 code{
     color:orangered;
 }
+.ZeroTwo{
+    font-family: cursive ;
+}
+#Q1{
+    text-align: center;
+    text-transform: capitalize;
+}
+#Q2{
+    font-family: fantasy;
+}
+#Outer{
+    font-size: 25px;
+}
+#Inner{
+    font-size: 10px;
+}
