@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>HTML LECTURES</title>
+    <style>
+        code{
+            color: orangered;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">HTML LECTURES</h1>
+    <hr>
+     <h2>HTML LECTURE-1</h2>
+    <hr>
+    <h3>HTML</h3>
+    <pre>
+Html stands for "HYPER TEXT MARKUP LANGUAGE", it is widely used for structuring a webpage and its contents.
+the components used to make the structure of a website are called html tags.
+
+    Extension for an  html file is ".html".
+
+By default "index.html" is treated as the homepage, unless you manually specify which file to use as homepage "index.html" will be used by the server.
+    </pre><hr>
+    <h3>HTML TAGS</h3>
+    <pre>
+An html tag is a container for some content or other html tags. 
+
+    For example: <code> &lt;p&gt;This is a paragraph.&lt;/p&gt;</code>
+
+Here, the opening tag is - <code>&lt;p&gt;</code> ,
+      the closing tag is - <code>&lt;/p&gt;</code> ,
+      the content is     -"<code>This is a paragraph.</code>" ,
+      the element is     - <code> &lt;p&gt;This is a paragraph.&lt;/p&gt;</code>
+    </pre>
+    <hr>
+     <h3>BASIC HTML PAGE</h3>
+    <pre><code>&lt;!DOCTYPE html&gt;         <!-- tells the browser that you are using html5 -->
+    &lt;html&gt;                         <!-- root element of an html document -->
+        &lt;head&gt;                     <!-- container for meta data -->
+            &lt;title&gt;                <!-- page title -->
+        &lt;/head&gt;
+        &lt;body&gt;                     <!-- contains data that will be parsed by the browser -->
+            &lt;p&gt;&lt;/p&gt;          <!-- paragraph tag-->
+        &lt;/body&gt;
+    &lt;/html&gt;
+         </code>
+    </pre>
+    <hr />
+    <h3>QUICK POINTS</h3>
+    <pre>
+         a. Html tag is the parent tag of head and body.
+         b. Most of the elements have an opening and closing tag with content in between.
+         c. Some tags have no content in between, or no closing tag.
+         d. You can use inspect code in browser to edit html code though it won't be reflected in the code editor.
+         e. Html is case insensetive.
+    </pre>
+    <hr>
+    <h3>COMMENTS IN HTML</h3>
+    <pre>
+A comment is that part of the code which should not be parsed on the browser. 
+Comments are helpful when you are collaborating with someone or writing a lot of lines of code.
+Use <button>ctrl</button>+<button>/</button> in windows to comment out a line of code, in an empty line a blank comment will form.
+
+    An example of what a comment looks  like - <code>&lt;!-- This is a comment. --&gt;</code>
+    </pre>
+    <hr>
+    <h2>HTML LECTURE-2</h2>
+    <hr>
+    <h3>BASIC HTML TAGS</h3>
+    <pre>
+In this lecture basic html tags and attributes have been covered,
+the covered topics are more than enough to make a basic html page.</pre
+    >
+    <hr />
+    <h3>HTML ATTRIBUTES</h3>
+    <pre>
+Html attributes can be used to do some of the work done by css inside the tag itself,
+though it would be a better idea to use a css file for styling the page.
+    </pre>
+    <pre>           For example : <code>&lt;html lang="en"&gt;</code>
+
+Here, the attribute is "lang" and its value is "en", which tells the browser that the language of the page is English.
+    </pre>
+    <hr />
+    <h3>HEADING TAGS</h3>
+    <pre>
+Heading tags as the name suggests are used to add headings on a webpage,
+there are six types of heading tags from h1 to h6, these tags get smller as the number increases.
+    </pre>
+    <pre>The six heading tags are written as follows -
+             &lt;h1&gt;Heading 1&lt;/h1&gt; <!--This is the largest heading and there should be only one h1 tag per page-->
+             &lt;h2&gt;Heading 2&lt;/h2&gt; <!--This is the second largest heading-->
+             &lt;h3&gt;Heading 3&lt;/h3&gt; <!--This is the third largest heading-->
+             &lt;h4&gt;Heading 4&lt;/h4&gt; <!--This is the fourth largest heading-->
+             &lt;h5&gt;Heading 5&lt;/h5&gt; <!--This is the fifth largest heading-->
+             &lt;h6&gt;Heading 6&lt;/h6&gt; <!--This is the smallest heading-->
+    
+It is to be noted that h1 should only be use once per page as it is the main heading of the page,
+and the rest of the headings can be used as per requirement.
+            </pre>
+    <hr />
+    <h3>PARAGRAPH TAG</h3>
+    <pre>The paragraph tag is used to add a paragraph to the page.</pre>
+    <pre>               Example : <code>&lt;p&gt;This is a paragraph. &lt;/p&gt;</code> <!--It is to be noted that i could have used the paragraph tag instead of thr pre tag but chose not to to maintain page consistency-->
+    
+paragraph tag automatically sorts the text by removing extra spaces and line breaks.
+    </pre>
+    <hr />
+    <h3>ANCHOR TAG</h3>
+    <pre>
+The anchor tag is used to add relative and absolute links to the page using href attribute.
+you can also add text to the link which will be displayed on the page.
+    </pre>
+    <pre>
+            Example : 
+                        <code>&lt;a href="link"&gt; site name &lt;/a&gt;</code>                 (for absolute links.)
+                        <code>&lt;a href="folder/file.html"&gt; file name &lt;/a&gt;</code>     (for relative links.)
+
+Here, the href attribute is used to specify the link and the text "site name" will be displayed on the page.
+    </pre>
+    <hr />
+    <h3>IMAGE TAG</h3>
+    <pre>
+The image tag is used to display images on a webpage by eityer using a relative or absolute link.
+    </pre>
+    <pre>
+            Example : 
+                        <code>&lt;img src="link" alt="image from web";</code>                 (for absolute links.)
+                        <code>&lt;img src="folder/file.html" alt="local image"&gt;</code>        (for relative links.)
+    
+Here, the src attribute is used to specify the link of the image,
+the alt attribute specifies the text to be displayed if the image is not loaded.
+                    </pre>
+    <hr />
+    <h3>BR TAG</h3>
+    <pre>
+The br tag is used to add a line break in the text.
+    </pre>
+    <pre>
+            Example : <code>&lt;br&gt;</code>
+
+This tag is commonly used to add lines in a paragraph or to add a line break in the text.
+    </pre>
+    <hr />
+    <h3>BOLD, ITALIC AND UNDERLINE TAGS</h3>
+    <pre>
+ The bold, italic and underline tags are used to style the text on a webpage.
+    </pre>
+    <pre>
+            Example : 
+                        <code>&lt;b&gt;Bold&lt;/b&gt;</code>
+                        <code>&lt;i&gt;Italic;&lt;/i&gt;</code>
+                        <code>&lt;u&gt;Underline&lt;/u&gt;</code>
+
+These tags are used to make the text bold, italic and underlined respectively.
+    </pre>
+    <hr />
+    <h3>BIG AND SMALL TAGS</h3>
+    <pre>
+        The big and small tags are used to change the size of the text on a webpage.
+    </pre>
+    <pre>
+            Example : 
+                        <code>&lt;big&gt;Big&lt;/big&gt;</code>
+                        <code>&lt;big&gt;Big&lt;/big&gt;</code>
+
+It can be understood by self that the big tag makes the text bigger and the small tag makes the text smaller.
+    </pre>
+    <hr />
+    <h3>HR TAG</h3>
+    <pre>
+The hr tag is quite useful to add a horizontal line in the text,
+it is commonly used to separate sections of a webpage.
+</pre
+    >
+    <pre>
+            Example : <code>&lt;hr&gt;</code>
+
+As you can see I personally have been using this tag to make sections on the html lecture pages.
+</pre
+    >
+    <hr />
+    <h3>SUBSCRIPT AND SUPERSCRIPT TAG</h3>
+    <pre>
+The subscript and superscript tags are used to add subscript and superscript text on a webpage.
+</pre
+    >
+    <pre>
+        Example : 
+                        <code>&lt;sub&gt;Subscript&lt;/sub&gt;</code>
+                        <code>&lt;sup&gt;Superscript&lt;/sup&gt;</code>
+
+You can use these tags to make text appear above or below on the line of text.
+These tags can be used for various purposes like writing chemical formulas or mathematical equations.
+    </pre>
+    <hr />
+    <h3>PRE TAG</h3>
+    <pre>
+The pre tag is used to display text as it is i.e. without ignoring spaces or line breaks</pre
+    >
+    <pre>
+            Example : <code>&lt;pre&gt; This is preformatted text. &lt;/pre&gt;</code>
+
+Well on this page i have mostly used the pre tag which at the time i do not not whether it is a good practice or not,
+but it is quite useful to display code snippets as it preserves the formatting of the text.
+    </pre>
+    <hr />
+</body>
+</html>
