@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        code{
+            color: orangered;
+        }
+        samp{
+            color: pink;
+        }
+        body{
+            background-color: rgb(61, 61, 61);
+            color: aliceblue;
+        }
+        h1, h2, h3, h4, h5, h6{
+            color: blueviolet;
+            text-align: center;
+        }
+        h3{
+            text-align: start;
+        }
+    </style>
+    <script src="AC-JS-LECTURE-1.JS"></script>
+</head>
+<body>
+    <h1>JAVASCRIPT LECTURE-1</h1>
+    <hr>
+    <pre>
+        JavaScript is a dynamically typed programming language which is mainly used to give instructions to web browsers...
+
+        One can use "console" to type and test JS code in a browser instead of using a code editor like vs code, 
+        though it is to be noted that the code will not be saved in the browser or in any file if you are using console...
+    </pre><hr>
+    <h3>CONSOLE.LOG</h3>
+    <hr>
+    <pre>
+        <code>Console.log();</code> is used to log or print a message to the console...
+
+            If you type JS code in the console directly you will have to press enter in order to execute it,
+            but you won't have to press enter when using a JS document...
+
+            Example : 
+                        <code>
+                            console.log("Hello World!");
+                        </code>
+            Output  : 
+                        <samp>
+                            Hello World!
+                        </samp>
+
+            Extra : The extension <code>.js</code> is used to make JavaScript files...
+                    You have to link a JavaScript file to an HTML file because the browser can't directly use a JavaScript file,
+                    use script tag and src attribute in html for linking...
+
+    </pre><hr>
+    <h3>VARIABLES</h3>
+    <hr>
+    <pre>
+        In JavaScript, a variable is like a named container that stores data...
+    </pre>
+    <hr>
+    <h3>VARIABLE RULES</h3>
+    <hr>
+    <pre>
+        The rules i have been taught so far are as follows -
+
+            A. Variable names are case sensitive ; "a" and "A" are not the same...
+            B. Only letters, digits, underscores and dollar sign are allowed... 
+                Note : Even space between characters is not allowes...
+            C. Digits cannot be the first character in a variable name...
+            D. Reserved words cannot be variable names...
+
+                Extra :  Its usually considered a good practice to use camel case when naming a variable...
+                         Some of the cases are as follows... 
+
+                            1. Camel case : <code>fullName</code>
+                            2. Snake case : <code>full_name</code>
+                            3. Kebab case : <code>full-name</code>
+                            4. Pascal case : <code>FullName</code>
+    </pre><hr>
+    <h3>VARIABLE DECLARATION KEYWORDS</h3>
+    <hr>
+    <pre>
+        Variable declaration keywords or simply keywords are used to declare variables...
+        Currently we are going to talk about var, let and const...
+
+            A. Var : Here, variable can be re-declared and updated... A global scope variable...
+            B. Let : Here, variable cannot be re-declared but can be updated... A block scope variable...
+            C. Const : Here, variable can neither be updated or re-declared... A block scope variable...
+
+                Mostly let and const are used by coders nowadays, var was used before 2015 when ES6 was yet to be introduced...
+    </pre><hr>
+    <h3>DATA TYPES IN JS</h3>
+    <hr>
+    <pre>
+        Broadly speaking, there are two types of data types in JS...
+
+            A. Primitive data types
+                                    There are seven primitive data types and these seven are mentioned below...
+
+                                            1. Number
+                                            2. String
+                                            3. Boolean
+                                            4. Undefined
+                                            5. Null
+                                            6. Bigint
+                                            7. Symbol
+            B. Non-primitive data types
+                                    So far only one non primitive data type has been mentioned...
+
+                                            1. Object
+    </pre><hr>
+    <h3>OBJECT</h3><hr>
+    <pre>
+        An object is a non primitive data type in JS... It can be used to group variables...
+
+        Example :
+                    <code>
+                        Const Student = {
+                            fullName : "Rahul",
+                            age : 20,
+                            cgpa: 8.2,
+                            isPass : True
+                        };
+                        console.log(Student);
+                    </code>
+        Output :
+                    <samp>
+                        {fullName: 'Rahul', age: 20, cgpa: 8.2, isPass: true}
+                            age : 20
+                            cgpa : 8.2
+                            fullName : "Rahul"
+                            isPass : true
+                    </samp>
+
+        To print a variable or key of an object use <code>console.log(Student["age"]);</code>...
+
+        Example :
+                    <code>
+                        console.log(Student["age"]);
+                        console.log(Student["cgpa"]);
+                    </code>
+        Output : 
+                    <samp>
+                        20
+                        8.2
+                    </samp>
+        
+        To change the value of a variable use <code>Student["age"] = Student["age"]+1;</code>...
+
+        Example :
+                    <code>
+                        Student["age"] = Student["age"]+1;
+                        Student["fullName"] = "Rahul Sharma";
+                        console.log(Student["age"])
+                        console.log(Student["fullName"])
+                    </code>
+        Output : 
+                    <samp>
+                        21
+                        Rahul Sharma
+                    </samp>
+                    
+            Extra : You cannot change a constant variable's value but you can change the keys of a const object,
+                    because a single change does not imply that the whole object has changed...
+    </pre><hr>
+        <pre>
+            END OF LECTURE-1
+            THANK YOU FOR READING!
+        </pre>
+</body>
+</html>
