@@ -1,3 +1,4 @@
+```
 // 1.
 console.log("Topic - Console.log");
 console.log("Hello World");
@@ -5,39 +6,39 @@ console.log("Hello World");
 console.log("Topic - Variable Rules");
 console.log("Point-1");
 // Variable names are case sensitive
-TestName = "Hitogami";
-testName = "Sam";
+let TestName = "Hitogami";
+let testName = "Sam";
 console.log("TestName");
 console.log(TestName);
 console.log("testName");
 console.log(testName);
 console.log("Point-2");
 // Only letters, digits, underscore and dollar sign are allowed
-a="Lowercase letter";
+let a = "Lowercase letter";
 console.log("a");
 console.log(a);
-A="Uppercase letter";
+let A = "Uppercase letter";
 console.log("A");
 console.log(A);
-_1="Digit";
+let _1 = "Digit";
 console.log("_1");
 console.log(_1);
 console.log("Note : Digits cannot be the first letter of a variable name");
-_="Underscore";
+let _ = "Underscore";
 console.log("_");
 console.log(_);
-$="Dollar sign";
+let $ = "Dollar sign";
 console.log("$");
 console.log($);
 console.log("Point-3");
-Note= "reserved words cannot be used as variable names";
+let Note = "reserved words cannot be used as variable names";
 console.log("Note");
 console.log(Note);
 console.log("Point-4");
-camelCase = "The first letter of the first word will be small rest will be capital...";
+let camelCase = "The first letter of the first word will be small rest will be capital...";
 console.log("camelCase");
 console.log(camelCase);
-camelCaseExample = "Do you get it now?";
+let camelCaseExample = "Do you get it now?";
 console.log("camelCaseExample");
 console.log(camelCaseExample);
 // 3.
@@ -48,15 +49,15 @@ console.log(semiChangeable);
 const unChangeable = "Cannot be changed or re-declared";
 console.log("const unChangeable");
 console.log(unChangeable);
-var changeable = "Can be changed and re-declared";
+let changeable = "Can be changed and re-declared";
 console.log("var changeable");
 console.log(changeable);
-_Note = "If you do not use let, const or var keywords to declare a variable, it will be considered as var";
+let _Note = "If you do not use let, const or var keywords to declare a variable, it will be considered as var";
 console.log("_Note");
 console.log(_Note);
 // 4.
 console.log("Topic - Data Types");
-// Primitive Data Types`
+// Primitive Data Types
 
 // string
 let stringDataType = "This is a string data type";
@@ -134,3 +135,4 @@ console.log(student);
 console.log("Even when an object is declared using const, its properties can be changed");
 
 console.log("END OF LECTURE-1");
+```
